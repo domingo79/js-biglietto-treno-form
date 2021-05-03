@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <title>Biglietto del Treno</title>
+</head>
+
+<body>
+
+    <div class="container_form">
+        <form action="">
+
+
+            <label for="Nome">Nome</label>
+            <input type="text" name="Nome" id="NomeUtente" required placeholder="Nome">
+
+            <label for="Cognome">Cognome</label>
+            <input type="text" name="Cognome" id="CognomeUtente" required placeholder="Cognome">
+
+
+
+            <label for="chilometri">Chilometri</label>
+            <input type="number" name="chilometri" id="KmUtente" required placeholder="Seleziona i km">
+
+
+            Seleziona la tua età per scoprire se hai diritto a uno sconto: <br>
+            <select name="eta" id="EtaUtente">
+                <option value="u18">Minorenne</option>
+                <option value="o18" selected>Maggiorenne</option>
+                <option value="o65">Over-65</option>
+            </select>
+
+
+            <input type="submit" value="Stampa Biglietto" onclick="datiBiglietto()">
+            <input type="reset" value="Reset" id="reset">
+
+        </form>
+    </div>
+
+    <div class="container_biglietto">
+
+        <p>Nome: <span id="NomeBiglietto"></span></p>
+        <p>Cognome: <span id="CognomeBiglietto"></span></p>
+        <p>Distanza in km: <span id="KmTratta"></span></p>
+        <p>Costo della Tratta: <span id="CostoTratta"></span></p>
+        <p>Sconto applicato: <span id="Sconto"></span></p>
+        <p>Totale: <span id="totale"></span> </p>
+        <p>Carrozza: <span id="carrozza"></span></p>
+        <p>Codice CP: <span id="codCP"></span></p>
+
+    </div>
+
+
+
+    <script src="./asset/js/main.js"></script>
+</body>
+
+</html>

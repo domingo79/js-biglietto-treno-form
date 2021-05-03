@@ -1,0 +1,14 @@
+.container_form
+{
+    width: 30%;
+    height: 40vh;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
